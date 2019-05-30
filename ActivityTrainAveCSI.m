@@ -1,5 +1,5 @@
 %% Load Training Data
-%load ActivityTrain2
+load ActivityTrainAveCSI
 
 % plot training data
 X=XTrain{1};
