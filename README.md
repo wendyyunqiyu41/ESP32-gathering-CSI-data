@@ -1,20 +1,9 @@
-# Wifi SCAN Example
+This CSIDataGather is made possible by ESP-IDF API. Refer to the API Guide to flash the CSIDataGather code on to ESP32. (https://docs.espressif.com/projects/esp-idf/en/latest/index.html#esp-idf-programming-guide)
 
-This example shows how to use scan of ESP32.
-
-We have two way to scan, fast scan and all channel scan:
-
-* fast scan: in this mode, scan will finish after find match AP even didn't scan all the channel, you can set thresholds for signal and authmode, it will ignore the AP which below the thresholds.
-
-* all channel scan : scan will end after checked all the channel, it will store four of the whole matched AP, you can set the sort method base on rssi or authmode, after scan, it will choose the best one 
-
-and try to connect. Because it need malloc dynamic memory to store match AP, and most of cases is to connect to better signal AP, so it needn't record all the AP matched. The number of matches is limited to 4 in order to limit dynamic memory usage. Four matches allows APs with the same SSID name and all possible auth modes - Open, WEP, WPA and WPA2.
-
-* Steps to setup the graph
+Setup the menuconfig and graph:
 1. in menuconfig change CPU Frequency to 240MHz
 2. Run make flash monitor to check if data is being gathered
 3. make moniotr > raw.log 
-4. Open up new termal 
+4. Open up new terminal in the CSIDataGather folder
 5. tail -f raw.log | python SubMag.py
-# CSIDataGather
-# CSIDataGather
+
