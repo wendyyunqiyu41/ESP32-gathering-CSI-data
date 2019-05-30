@@ -7,3 +7,6 @@ Setup the menuconfig and graph:
 4. Open up new terminal in the CSIDataGather folder
 5. tail -f raw.log | python SubMag.py
 
+Matlab is used to process time series data and machine learning toolbox is used for training long-short-term-memory network. For more details please check out the matlab file.
+
+By University of Washington, Tacoma students: Francisco Radilla, Jordan Gonzalas, Liezel Reoganis, Wendy Yunqi Yu
